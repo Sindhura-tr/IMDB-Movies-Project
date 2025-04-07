@@ -1,12 +1,13 @@
 # Importing necessary libraries
 import csv,requests
 import pandas as pd
+import streamlit as st
 
 # Class and methods required for IMDB Movies Data collection
 class api_extracter:
 
     def __init__(self,api_key):
-        self.api_key = api_key
+        self.api_key = st.secrets["API_KEY"]
 
     def get_data(self):
         url = "https://imdb232.p.rapidapi.com/api/title/get-most-popular"
