@@ -6,7 +6,7 @@ import streamlit as st
 # Class and methods required for IMDB Movies Data collection
 class api_extracter:
 
-    def __init__(self,api_key):
+    def __init__(self):
         self.api_key = st.secrets["API_KEY"]
 
     def get_data(self):
